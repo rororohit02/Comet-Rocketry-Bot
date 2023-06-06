@@ -7,21 +7,21 @@ const fs = require("fs");
 const { google } = require("googleapis");
 
 const service = google.sheets("v4");
-const credentials = require("./credentials.json");
+// const credentials = require("./credentials.json"); ASK ME FOR THE CREDENTIALS
 
 const Discord = require("discord.js");
-// const { MessageEmbed } = require('discord.js'); might need? idk
+// const { MessageEmbed } = require('discord.js');
 const { Client, Intents } = require('discord.js');
 
 const { identitytoolkit } = require("googleapis/build/src/apis/identitytoolkit");
 const { time } = require("console");
 
-const guildId = "708421411693264926"; // Change based on server
+const guildId = "708421411693264926"; // Change based on server. current id only used as a test server
 
 const bot = new Discord.Client({ intents: [Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_PRESENCES] });
 
-const discordToken = "ask me for the token";
-const prefix = '!';
+const discordToken = "ASK ME FOR THE TOKEN";
+
 var currentDate = new Date();
 
 // All of the answers
@@ -236,22 +236,6 @@ setInterval(execute, 10000);
 
 
 })
-
-// bot.on("message", (msg) =>{
-//     if ((msg.author.bot) || (!msg.content.startsWith(prefix))){
-//         return;
-//     }
-//     let args = msg.content.substring(prefix.length).split(" ")
-//     console.log(args)
-
-//     if (args[0] == 'reset'){
-//         numOfEntries = 0;
-//         msg.channel.send("reset")
-//     }
-
-    
-// })
-
 
 
 bot.login(discordToken);
