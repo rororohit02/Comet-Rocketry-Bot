@@ -1,5 +1,5 @@
 //TODO: add functionality for bot to write to new spreadsheet containing only valid entries
-//TODO: reorganize code so functions are outside bot listening events AND add message commands to run execute() by force
+
 //TODO: upload to GitHub
 
 
@@ -21,7 +21,7 @@ const guildId = "708421411693264926"; // Change based on server
 const bot = new Discord.Client({ intents: [Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_PRESENCES] });
 
 const discordToken = "MTExMzUwMjI5Njg3NDE1NjA5Mg.GDb-e7.p5lrXu9AdBhxfHW-C--KwPkWQFpylpe8SzbyUc";
-
+const prefix = '!';
 var currentDate = new Date();
 
 // All of the answers
@@ -230,7 +230,28 @@ function execute(){
     answers = [];
 }
 
+
 execute();
 setInterval(execute, 10000);
+
+
 })
+
+// bot.on("message", (msg) =>{
+//     if ((msg.author.bot) || (!msg.content.startsWith(prefix))){
+//         return;
+//     }
+//     let args = msg.content.substring(prefix.length).split(" ")
+//     console.log(args)
+
+//     if (args[0] == 'reset'){
+//         numOfEntries = 0;
+//         msg.channel.send("reset")
+//     }
+
+    
+// })
+
+
+
 bot.login(discordToken);
