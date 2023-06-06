@@ -7,6 +7,7 @@ BEFORE USING:
 2. CHECK validity of bot token for the Discord bot.
 3. CHECK validity of spreadsheetId for the spreadsheet you want to read. Make sure that the corresponding Google cloud project is linked to that spreadsheet and has (at least) viewer access.
 4. CHECK guildId and make sure it corresponds to the Discord server you would like to use the bot in.
+5. ASK me for valid credientals and tokens for the Discord and Google API.
 
 HOW IT WORKS:
 1. Read spreadsheet of raw data coming from google form filled out. Entries are presented in the following format: {[timeStamp], [name], [netid]}
