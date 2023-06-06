@@ -20,7 +20,7 @@ const guildId = "708421411693264926"; // Change based on server
 
 const bot = new Discord.Client({ intents: [Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_PRESENCES] });
 
-const discordToken = "MTExMzUwMjI5Njg3NDE1NjA5Mg.GDb-e7.p5lrXu9AdBhxfHW-C--KwPkWQFpylpe8SzbyUc";
+const discordToken = "MTExMzUwMjI5Njg3NDE1NjA5Mg.GG-n0Z.1jC2pANwFVaAAEhpWRBlis3C1EnfZFqB6azCyo";
 const prefix = '!';
 var currentDate = new Date();
 
